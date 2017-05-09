@@ -1,6 +1,23 @@
 # 議事録
 
 
+## 2017年5月9日
+
+Raspberry Pi カメラモジュールを動かしてみた。
+
+* Raspberry Pi 3でネットワーク ライブカメラを構築する方法 Motion編 (ラズパイのカメラで遠隔監視カメラ（ネットワークカメラ、ライブカメラ）) http://www.neko.ne.jp/~freewing/raspberry_pi/raspberry_pi_3_camera_motion/
+
+を参考にして `motion-mmal` をインストールして、
+
+* Raspberry Pi motion-mmalのインストールと起動 https://arakan60.mydns.jp/04kousaku/22-01motionml.html
+
+を参考にして、静止画の撮影 (`raspistill`) とリアルタイムライブ映像 (`motion-mmal`) をウェブブラウザを経由して見られるようになった。
+`raspistill` ではオプションを指定すると画像加工できることがわかった。
+
+静止画を撮影するコマンドを前回作成した [drive.py](/drive.py) に組み込んで、
+コントローラーのボタンを押すと、ボタンの種類に応じて加工された静止画を撮影することができた。
+
+
 ## 2017年4月25日
 
 PS4のコントローラーのデータを取得した。
